@@ -1,0 +1,15 @@
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\lista.txt
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\META-INF
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\pack.mcmeta
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\deathsound
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\deathsound\sounds
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\deathsound\sounds.json
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\deathsound\sounds\death_sound.ogg
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft\lang
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft\lang\en_us.json
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft\lang\es_cl.json
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft\lang\es_es.json
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\assets\minecraft\lang\es_mx.json
+C:\Users\danie\Downloads\mods mios\DeathSound\src\main\resources\META-INF\mods.toml

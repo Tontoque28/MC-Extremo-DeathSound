@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="CC0"
+
+[[mods]]
+modId="deathsound"
+version="1.0.2"
+displayName="Death Sound Mod"
+authors="Tontoque28"
+description='''
+Plays the death sound from the Hardcore series.
+Available languages: English (US), Spanish (Spain), Spanish (Mexico), Spanish (Chile).
+'''
+
+[[dependencies.deathsound]]
+modId="forge"
+mandatory=true
+versionRange="[47.2.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.deathsound]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
