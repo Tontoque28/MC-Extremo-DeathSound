@@ -1,0 +1,69 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
+version = ''
+group = 'com.tontoque28.customdeathsound'
+archivesBaseName = 'CustomDeathSound-1.0.1-Forge-1.12.2'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+minecraft {
+    mappings channel: 'snapshot', version: '20171003-1.12'
+
+    runs {
+        client {
+            workingDirectory project.file('run-client')
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2859'
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "customdeathsound",
+            "Specification-Vendor": "Tontoque28",
+            "Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": "1.0.1",
+            "Implementation-Vendor": "Tontoque28",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+task runServer(type: Exec) {
+    dependsOn 'build'
+    workingDir = project.file('run')
+    doFirst {
+        delete fileTree(dir: 'run/mods', include: '*.jar')
+        copy {
+            from 'build/libs'
+            include 'CustomDeathSound-1.0.1-Forge-1.12.2.jar'
+            into 'run/mods'
+        }
+    }
+    commandLine "${System.getProperty('java.home')}/bin/java", '-Xmx2G', '-jar', 'forge-1.12.2-14.23.5.2859.jar', 'nogui'
+}

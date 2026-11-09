@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "customdeathsound",
+    "name": "Custom DeathSound",
+    "description": "Plays a death sound (the classic Hardcore series sound by default) whenever a player dies. Each player can configure their own custom .wav sound to play instead, via the client config.",
+    "version": "1.0.1",
+    "mcversion": "1.12.2",
+    "authorList": ["Tontoque28"],
+    "credits": "Copyright (c) Tontoque28. All Rights Reserved."
+  }
+]
