@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[0,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="customdeathsound"
+version="1.0.1"
+displayName="Custom DeathSound"
+authors="Tontoque28"
+description='''Plays a death sound (the classic Hardcore series sound by default) whenever a player dies. Each player can configure their own custom .wav sound to play instead, via the client config.'''
+
+[[dependencies.customdeathsound]]
+    modId="forge"
+    mandatory=true
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.customdeathsound]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.4,1.22)"
+    ordering="NONE"
+    side="BOTH"
