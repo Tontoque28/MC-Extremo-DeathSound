@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "customdeathsound",
+  "version": "${version}",
+  "name": "Custom DeathSound",
+  "description": "Plays a death sound (the classic Hardcore series sound by default) whenever a player dies. Each player can configure their own custom .wav sound to play instead, via the client config.",
+  "authors": ["Tontoque28"],
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.tontoque28.customdeathsound.CustomDeathSound"],
+    "client": ["com.tontoque28.customdeathsound.CustomDeathSoundClient"]
+  },
+  "mixins": ["customdeathsound.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.16.5",
+    "java": ">=8",
+    "fabric": "*"
+  }
+}
